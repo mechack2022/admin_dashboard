@@ -1,9 +1,17 @@
+import { ColorModeContext, useMode } from "./theme";
+import { ThemeProvider, CssBaseline } from "@mui/icons-material";
+
 
 function App() {
+  const [theme, colorMode] = useMode();
+  
   return (
-    <div className="app">
+    <ColorModeContext.Provider value={colorMode}>
+     <div className="app">
 
-    </div>
+</div>
+    </ColorModeContext.Provider>
+   
   );
 }
 
