@@ -1,0 +1,248 @@
+{
+  "school": {
+    "name": "ABC School",
+    "location": "City XYZ",
+    "principal": {
+      "name": "John Smith",
+      "email": "john.smith@example.com"
+    }
+  },
+  "users": [
+    {
+      "role": "administrator",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "profilePicture": "admin.jpg"
+    },
+    {
+      "role": "teacher",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "profilePicture": "jane.jpg"
+    },
+    {
+      "role": "student",
+      "name": "John Smith Jr.",
+      "email": "john.smith.jr@example.com",
+      "profilePicture": "john.jpg"
+    },
+    {
+      "role": "parent",
+      "name": "Mary Smith",
+      "email": "mary.smith@example.com",
+      "profilePicture": "mary.jpg"
+    }
+  ],
+  "students": [
+    {
+      "id": "STU001",
+      "name": "John Smith Jr.",
+      "dateOfBirth": "2005-07-10",
+      "gender": "Male",
+      "address": "123 Main St, City XYZ",
+      "parent": {
+        "name": "Mary Smith",
+        "email": "mary.smith@example.com"
+      },
+      "enrollmentDate": "2012-09-01",
+      "emergencyContact": {
+        "name": "James Smith",
+        "relationship": "Guardian",
+        "phone": "+1234567890"
+      },
+      "attendance": [
+        {
+          "date": "2023-06-01",
+          "status": "Present"
+        },
+        {
+          "date": "2023-06-02",
+          "status": "Present"
+        },
+        {
+          "date": "2023-06-03",
+          "status": "Absent"
+        }
+      ],
+      "grades": [
+        {
+          "subject": "Mathematics",
+          "marks": [
+            {
+              "exam": "Mid-Term",
+              "mark": 90
+            },
+            {
+              "exam": "Final",
+              "mark": 85
+            }
+          ]
+        },
+        {
+          "subject": "Science",
+          "marks": [
+            {
+              "exam": "Mid-Term",
+              "mark": 80
+            },
+            {
+              "exam": "Final",
+              "mark": 88
+            }
+          ]
+        }
+      ],
+      "timetable": [
+        {
+          "day": "Monday",
+          "periods": [
+            {
+              "subject": "Mathematics",
+              "startTime": "09:00 AM",
+              "endTime": "10:30 AM"
+            },
+            {
+              "subject": "Science",
+              "startTime": "11:00 AM",
+              "endTime": "12:30 PM"
+            }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "periods": [
+            {
+              "subject": "English",
+              "startTime": "09:00 AM",
+              "endTime": "10:30 AM"
+            },
+            {
+              "subject": "History",
+              "startTime": "11:00 AM",
+              "endTime": "12:30 PM"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "teachers": [
+    {
+      "id": "TCH001",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "profilePicture": "jane.jpg",
+      "assignments": [
+        {
+          "subject": "Mathematics",
+          "title": "Homework 1",
+          "description": "Complete exercises 1-10",
+          "dueDate": "2023-06-15",
+          "status": "Pending",
+          "submissions": [
+            {
+              "studentId": "STU001",
+              "submittedDate": "2023-06-14",
+              "file": "homework1.pdf",
+              "grade": null
+            },
+            {
+              "studentId": "STU002",
+              "submittedDate": "2023-06-14",
+              "file": "homework1.docx",
+              "grade": 85
+            }
+          ]
+        },
+        {
+          "subject": "Science",
+          "title": "Lab Report",
+          "description": "Write a report on the experiment",
+          "dueDate": "2023-06-20",
+          "status": "Pending",
+          "submissions": [
+            {
+              "studentId": "STU001",
+              "submittedDate": "2023-06-19",
+              "file": "labreport.pdf",
+              "grade": null
+            },
+            {
+              "studentId": "STU002",
+              "submittedDate": "2023-06-19",
+              "file": "labreport.docx",
+              "grade": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "name": "Mary Smith",
+      "email": "mary.smith@example.com",
+      "profilePicture": "mary.jpg",
+      "child": {
+        "id": "STU001",
+        "name": "John Smith Jr."
+      },
+      "communication": [
+        {
+          "teacherId": "TCH001",
+          "messages": [
+            {
+              "sender": "TCH001",
+              "message": "Your child is performing well in class.",
+              "timestamp": "2023-06-03T10:15:00"
+            },
+            {
+              "sender": "PARENT",
+              "message": "Thank you for the update.",
+              "timestamp": "2023-06-03T10:20:00"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Parent-Teacher Conference",
+      "description": "The parent-teacher conference will be held on June 10th. Please book your appointment.",
+      "date": "2023-06-10"
+    },
+    {
+      "title": "School Picnic",
+      "description": "The annual school picnic will be held on June 15th. Don't forget to bring your picnic baskets.",
+      "date": "2023-06-15"
+    }
+  ],
+  "forums": [
+    {
+      "title": "Science Discussion Forum",
+      "posts": [
+        {
+          "user": "TCH001",
+          "message": "What are your thoughts on the latest scientific discoveries?",
+          "timestamp": "2023-06-01T14:30:00"
+        },
+        {
+          "user": "STU001",
+          "message": "I find them fascinating! Especially the advancements in space exploration.",
+          "timestamp": "2023-06-01T15:00:00"
+        },
+        {
+          "user": "TCH001",
+          "message": "Indeed, the possibilities are endless.",
+          "timestamp": "2023-06-01T15:30:00"
+        },
+        {
+          "user": "STU002",
+          "message": "I'm excited to learn more about genetics!",
+          "timestamp": "2023-06-01T15:45:00"
+        }
+      ]
+    }
+  ]
+}
